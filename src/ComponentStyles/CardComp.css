@@ -1,0 +1,8 @@
+.cards{
+    opacity:0.5;
+    margin: 5px;
+    height: 30vh;
+}
+.cards:hover{
+    transform: scale(1.1);
+}

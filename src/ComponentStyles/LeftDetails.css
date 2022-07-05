@@ -1,0 +1,43 @@
+.left-details{
+    display: flex;
+    flex-direction:column;
+    margin: 30px;
+    align-items: center;
+    flex:0.30;
+}
+.left-details_status> h2,p{
+    color:white;
+    margin-top:-10px
+
+
+}
+.weather__type{
+    text-overflow: ellipsis;
+    width: 120px;
+    font-weight:600;
+    margin-bottom:0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.weather__type:hover{
+    text-overflow:clip;
+    width:200px;
+    white-space:normal;
+}
+.weather__cityName{
+    margin-top:0;
+    font-weight:200
+}
+
+.left-details_temp>h1{
+    margin-top:10px;
+    color:white;
+}
+.left-details_temp>h4{
+    color: white;
+    font-weight:600;
+    display: inline-block;
+}
+.weather__cityName+h4::after{
+    content:" / "
+}

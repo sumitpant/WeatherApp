@@ -1,0 +1,7 @@
+.weather__Icon{
+    height: 10vh;
+    width: 10vh;
+    object-fit: contain;
+    color: white;
+    
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Main from './Components/Main';
+import {BrowserRouter as Router ,Routes ,Route} from 'react-router-dom';
+//http://api.weatherapi.com/v1/search.json?key=28bba4d1b56f4e36b0270752220507&q=29.2183, 79.5130
 function App() {
+/**
+ * Create Carousel component.
+ * Make it responsive;
+ */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          <Route/>
+        </Routes>
+      </Router>
+
+    
     </div>
   );
 }
